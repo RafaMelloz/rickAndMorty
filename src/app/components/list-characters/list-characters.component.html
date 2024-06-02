@@ -1,0 +1,41 @@
+
+<main class="container w-100 p-3 ">
+    <input-search  (emmitSearch)="getSearch($event)"></input-search>
+    <div class="row row-gap-4 row-cols-2 justify-content-md-center justify-content-lg-between">
+    @for(character of getCharacters(); track character){
+
+
+      <a class="col cardCharacters bg-dark-1000" [routerLink]="['/detalhes', character.id]">
+        <img class="cardCharacters__img" src={{character.image}} alt={{character.name}}>
+
+        <div class="cardCharacters__description">
+           <h1 class="fw-bolder fs-2 text-white">{{character.name}}</h1>
+            <span class="text-white justify-content-between fw-semibold">
+              <div [ngClass]="{
+                  'c-vivo': character.status === 'Alive',
+                  'c-morto': character.status === 'Dead',
+                  'c-desc': character.status !== 'Alive' && character.status !== 'Dead'
+                }"></div>
+              {{ character.status}} - {{character.gender}}
+            </span>
+
+            <p class="text-white mt-5">
+              <b class="d-block text-white-50">Origin:</b>
+              {{character.origin.name}}
+            </p>
+        </div>
+      </a>
+    }@empty {
+      <div class="w-100">
+        <h1 class="text-white text-center">Nenhum resultado encontrado</h1>
+      </div>
+    }
+  </div>
+  <pagination></pagination>
+
+</main>
+
+
+
+
+

@@ -1,0 +1,47 @@
+.cardCharacters{
+  display: flex;
+  padding: 0px!important;
+  width: 550px;
+  background-color: var(--bg-gray-1000);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.cardCharacters__img{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  max-width: 200px;
+  width: 100%;
+}
+
+.cardCharacters__description{
+  padding: 10px;
+  width: 100%;
+}
+
+
+.c-vivo{
+  width:10px;
+  height:10px;
+  border-radius: 999px;
+  background-color: rgb(32, 255, 3);
+  display: inline-block;
+
+}
+
+.c-morto{
+  width:10px;
+  height:10px;
+  border-radius: 999px;
+  background-color: rgb(252, 4, 4);
+  display: inline-block;
+}
+
+.c-desc{
+  width:10px;
+  height:10px;
+  border-radius: 999px;
+  background-color: rgb(109, 108, 108);
+  display: inline-block;
+
+}

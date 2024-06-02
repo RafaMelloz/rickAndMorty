@@ -1,0 +1,20 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+:root{
+    --bg-dark-1000:#252525;
+    --bg-gray-1000:#464646;
+    --bg-gray-100:#ADADAD;
+}
+
+
+.bg-dark-1000{
+  background-color: var(--bg-dark-1000);
+}
+
+.bg-gray-1000{
+  background-color: var(--bg-gray-1000);
+}
+
+.bg-gray-100{
+  background-color: var(--bg-gray-100);
+}

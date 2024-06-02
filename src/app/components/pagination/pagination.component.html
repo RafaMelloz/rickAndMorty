@@ -1,0 +1,11 @@
+<div class="d-flex justify-content-between  my-3">
+  <button (click)="onPreviousPage()" [disabled]="rickApiService.page === 1"
+  class="pageButton">
+    Previous
+  </button>
+  <span class="text-white fw-bolder fs-4">Page {{ rickApiService.page }}</span>
+  <button (click)="onNextPage()" [disabled]="rickApiService.page === 10"
+  class="pageButton">
+    Next
+  </button>
+</div>
